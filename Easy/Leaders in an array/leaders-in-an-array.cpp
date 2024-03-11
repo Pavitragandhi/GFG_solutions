@@ -13,20 +13,15 @@ class Solution{
     public:
     vector<int> leaders(int a[], int n){
         vector<int> result;
+        int maximum = INT_MIN;
         
-        for(int i = 0; i<n; i++){
-            bool check = true;
-            for(int j = i+1; j<n; j++){
-                if(a[i]<a[j]){
-                    check = false;
-                    break;
-                }
-            }
-            
-            if(check){
+        for(int i = n-1; i>=0; i--){
+            if(a[i] >= maximum){
+                maximum = a[i];
                 result.push_back(a[i]);
             }
         }
+        reverse(result.begin() , result.end());
         return result;
     }
 };
