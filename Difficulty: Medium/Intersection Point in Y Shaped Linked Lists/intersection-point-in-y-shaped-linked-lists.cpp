@@ -97,6 +97,7 @@ class Solution {
 };
 
 
+
 //{ Driver Code Starts.
 
 /* Driver program to test above function*/
@@ -134,6 +135,7 @@ int main() {
             temp->next = common;
         Solution ob;
         cout << ob.intersectPoint(head1, head2) << endl;
+        cout << "~" << endl;
     }
     return 0;
 }
