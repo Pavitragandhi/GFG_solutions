@@ -101,6 +101,7 @@ int main() {
 
         Solution ob;
         cout << ob.getMiddle(head) << endl;
+        cout << "~" << endl;
     }
 
     return 0;
